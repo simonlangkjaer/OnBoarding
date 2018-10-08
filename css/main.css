@@ -97,11 +97,81 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.navtop {
+    margin: auto;
+    width: 320px;
+    height: 150px;
+    display: grid;
+    align-content: center;
+    align-self: center;
+    grid-template-columns: 1fr;
+    background-color: rgb(160, 69, 74);
+    opacity: 0.7;
+    border-bottom: 3px solid white;
+}
+
+    #head {
+        margin: auto;
+        width: 320px;
+        height: 360px;
+        display: grid;
+        background-color: rgb(75, 175, 75);
+        opacity: 0.7;
+        border-bottom: 25px solid white;
+        
+      }
+
+      #breadcrumb {
+        margin: auto;
+        width: 320px;
+        height: 45px;
+        display: grid;
+        background-color: rgb(160, 69, 74);
+        opacity: 0.7;
+        border-bottom: 10px solid white;
+      }
+
+      #articlemid{
+        margin: auto;
+        width: 320px;
+        height: 2400px;
+        display: grid;
+        background-color: rgb(75, 175, 75);
+        opacity: 0.7;
+        border-bottom: 10px solid white; 
+      }
+
+      #sidebar {
+        margin: auto;
+        width: 320px;
+        height: 900px;
+        display: grid;
+        background-color: rgb(160, 69, 74);
+        opacity: 0.7;
+        border-bottom: 20px solid white;
+      }
+
+#figure {
+    margin: auto;
+    width: 320px;
+    height: 2600px;
+    display: grid;
+    background-color: rgb(75, 175, 75);
+    opacity: 0.7;
+    border-bottom: 50px solid white; 
+}
+
+#footnote {
+    margin: auto;
+    width: 320px;
+    height: 130px;
+    display: grid;
+    background-color: rgb(160, 69, 74);
+    opacity: 0.7;
+  }
 
 
-
-
-
+      
 
 
 
