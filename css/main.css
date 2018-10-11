@@ -97,63 +97,29 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.navtop {
-width: 100%;
-text-align: center;
-background-color: white;
+.nav-left {
+    width: 280px;
+    height: 100px;
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 10px;
 }
 
-.header1 {
-width: 100%;
-text-align: center;
-background-color: white;
-margin-bottom: 40px;
+a:link {
+    color: lightblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    color: lightblue;
+    align-content: space-between;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 5px;
 }
 
-.breadcrumb {
-width: 100%;
-text-align: center;
-background-color: white;
+a:hover {
+color: rgb(8, 91, 146);
+
 }
-
-.article {
-width: 100%;
-text-align: center;
-background-color:white;
-}
-
-.articlemid {
-width: 100%;
-text-align: center;
-background-color:white;
-}
-
-.sidebar {
-width: 100%;
-text-align: center;
-background-color: white;
-}
-
-.teaser {
-width: 100%;
-text-align: center;
-background-color:white;
-}
-
-.footer {
-width: 100%;
-text-align: center;
-background-color:white;
-}
-
-
-
-
-
-
-
-
-
 
 
 
