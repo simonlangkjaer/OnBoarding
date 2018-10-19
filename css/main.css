@@ -99,40 +99,69 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.group:after {
-    display: table;
-    clear: both;
-    }
+/* Font section */
+
+h1{
+    font-size: 34px;
+    font-weight: 700;
+
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* little golden orb from harry potter */
 
 .searchparent{
-    float: right;
+    display: flex;
+    justify-content: flex-end;
     padding-right: 5%;
-    }
+}
 
 @media screen and (min-width: 768px) {
-.searchparent {
-    padding-right: 10%;
+    .searchparent {
+        padding-right: 10%;
     }
-    }
+}
+
 
 /* menu with links starts here */
 
 
 
 .menu {
+    flex-wrap: wrap;
+    display: flex;
     width: 100%;
     height: 100%;
     top: 10px;
-    flex-wrap: wrap;
-    display: flex;
-    }
+}
 
 @media screen and (min-width: 768px) {
-.menu {
-    width: 90%;
-    padding-left: 10%;
+    .menu {
+        width: 90%;
+        padding-left: 10%;
     }
-    }
+}
         
 
 a:link {
@@ -145,11 +174,11 @@ a:link {
     padding-bottom: 5px;
     padding-left: 15px;
     padding-right: 15px;
-    }
+}
 
 a:hover {
     color: rgb(8, 91, 146);
-    }
+}
 
 
 
@@ -166,46 +195,44 @@ a:hover {
 }
 
 @media screen and (min-width: 320px) {
-.dummybox1 {
-    max-width: 100%;
+    .dummybox1 {
+        max-width: 100%;
     }
-    }
+}
 
 @media screen and (min-width: 1600px) {
-.dummybox1 {
-    width: 80%;
-    padding-left: 10%;
+    .dummybox1 {
+        width: 80%;
+        padding-left: 10%;
     }
-    }
+}
 
 .header1 {
     height: 180px;
     width: 100%;
     background-color: rgb(6, 125, 165);
-    margin-bottom: 25px;
-    }
+}
 
 @media screen and (min-width: 768px) {
     .header1{
-    position: absolute;
-    width: 30%;
-    top: 50%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    opacity: 0.5;
+        position: absolute;
+        width: 30%;
+        top: 50%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        opacity: 0.5;
     }
-    }    
+}    
 
 .headline {
     position: absolute;
-    margin-left: 10px;
-    margin-top: 10px;
+    margin: 10px 0 0 10px;
     font-family: Lato, sans-serif;
     font-weight: 200;
     font-size: 30px;
     color: white;
     text-decoration-color: none;
-    }
+}
 
 .headlinetext {
     position: absolute;
@@ -215,7 +242,7 @@ a:hover {
     font-weight: normal;
     font-size: 16px;
     color: white;
-    }
+}
 
 .headlinebox {
     position: absolute;
@@ -228,23 +255,22 @@ a:hover {
     font-size: 18px;
     color: rgb(6, 125, 165);
     background-color: white;
-    }
+}
 
 .headlinetextwrapper {
     position: relative;
 }
 
 .icon1 {
+    position: absolute;
     display: inline-block;
-    width: 1em;
-    height: 1em;
+    width: 20px;
+    height: 20px;
     stroke-width: 0;
     stroke:  rgb(6, 125, 165);
     fill:  rgb(6, 125, 165);
-    position: absolute;
-    top: 120px;
-    left: 150px;
-    
+    top: 118px;
+    left: 150px;  
 }
 
 
@@ -254,18 +280,19 @@ a:hover {
 
 
 .breadcrumbs {
-    position: relative;
-    left: 5%;
-    width: 90%;
-    height: auto;
-    }
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
 
 @media screen and (min-width: 1024px) {
     .breadcrumbs {
-    width: 80%;
-    left: 10%;
+        margin-left: 10%;
+        padding-left: 5px;
     }
-    }
+}
 
 
 
@@ -275,22 +302,22 @@ a:hover {
 
 .mainwrapper {
     position: relative;
-    }
+}
 
 @media screen and (min-width: 1024px) {
-.mainwrapper {
-    width: 80%;
-    margin-left: 10%;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-column-gap: 20px;
-    }  
+    .mainwrapper {
+        width: 80%;
+        margin-left: 10%;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-column-gap: 20px;
     }
+}
     
 .mainarticle {
     height: auto;
     margin-bottom: 10px;
-    }
+}
 
 
 
@@ -299,65 +326,42 @@ a:hover {
 
 
 .titletext {
-    float: left;
     padding-left: 5px;
     margin-bottom: 10px;
-    width: 100%;
-    font-family: Lato, sans-serif;
-    font-weight: normal;
-    font-size: 30px;
-    color: black;
-    }
+}
 
 .subject {
-    float: left;
     padding-left: 5px;
     margin-bottom: 10px;
-    width: 100%;
-    font-family: Lato, sans-serif;
-    font-weight: normal;
-    font-size: 26px;
-    color: black;
-    }
+}
 
 .dummybox2 {
-    width: 100%;
     float: left;
+    width: 100%;
     margin-right: 20px;
     max-width: 480px;
     max-height: 240px;
-    }
+}
 
 .loremipsum1 {
-    width: 100%;
-    margin-left: 5px;
     flex: wrap;
-    font-family: Lato, sans-serif; 
-    font-size: 14px;
-    }
+    margin-left: 5px;
+}
 
 .videosection {
-    width: 100%;
-    float: left;
     margin-left: 5px;
     margin-bottom: 10px;
-    font-family: Lato, sans-serif;
-    font-weight: normal;
-    font-size: 25px;
-    color: black;
-    }
+}
 
 .wrapiconinres {
     position: relative;
-    float: right;
-    height: auto;
-    }
+}
 
 @media screen and (min-width: 200px) {
-.resolution {
-    max-width: 100%;
+    .resolution {
+        max-width: 100%;
     }  
-    }
+}
 
 .iconplay{
     position: absolute;
@@ -366,22 +370,19 @@ a:hover {
     transform: translate(-50%, -50%);
     width: 2.5em;
     height: 2.5em;
-    padding: 10px;
+    padding: 10px 10px 10px 10px;
     stroke-width: 0;
     stroke: white;
     fill: white;
     background-color: #000;
     border-radius: 50%;
     opacity: 0.5;
-    }
+}
 
 .loremipsum2 {
-    width: 100%;
-    margin-left: 5px;
     flex: wrap;
-    font-family: Lato, sans-serif; 
-    font-size: 14px;
-    }
+    margin-left: 5px;
+}
 
 
 /* teaser section starts here */
@@ -392,33 +393,24 @@ a:hover {
     width: 100%;
     height: 100%;
     margin-bottom: 50px;
-    }
+}
 
-.teaserheader {
-    font-family: Lato, sans-serif;
-    font-size: 30px;
-    color: black;   
+.teaserheader {  
     margin-left: 5px;
     margin-bottom: 0px;
-    }
+}
 
 .teasertext {
-    float: left;
-    width: 90%;
     margin-left: 5px;   
-    }
+}
 
 .littlelist {
-    float: left;
-    width: 80%;
     margin-left: 5px;
     margin-top: 0px;
-    }
+}
 
 .wraparrowtolink1 {
-    float: right;
     position: relative;
-    width: 100%;
     margin-bottom: 30px;
 }
 
@@ -434,9 +426,7 @@ a:hover {
 }
 
 .wraparrowtolink2 {
-    float: right;
     position: relative;
-    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -454,38 +444,37 @@ a:hover {
 table {
     border-collapse: collapse;
     width: 100%;
-    }
+}
     
 th, td {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 5px;
-    }
+}
 
 th {
     background-color:#6ba1ce;
-    }
+}
 
 /* aside collumn right starts here */
 
 
-    
+ /* wwhen content is made delete media quiery */
 .subheadline {    
-    width: 100%;
     min-width: 100%;
-    height:auto;
-    }
+    margin-top: 30px;
+}
 
 @media screen and (min-width: 1024px) {
-.subheadline {
-    width: 100px;
+    .subheadline {
+        width: 100px;
     }  
-    }
+}
+/* when content is made delete media quiery */
 
 .asidemain {
-    height: 100%;
     margin-bottom: 10px;
-    }
+}
 
 .iconsection {
     display: inline-block;
@@ -494,39 +483,23 @@ th {
     stroke-width: 0;
     stroke:lightgray;
     fill:lightgray;
-    }
-
-
-.wrappersvg {
-    height: 650px;
-    width: 100%;
-    }
+}
 
 
 .iconlist {
     list-style: none;
     padding: 0px;
     margin-top: 0px;
-    }
+}
 
 .topinfo {
-    color: black;
+    color: lightgray;
     padding-left: 5px;
     margin-bottom: 0px;
     padding-bottom: 10px;
     padding-top: 0px;
     border-bottom: 1px solid lightgray;
-    font-family: Lato, sans-serif;
-    font-weight: lighter;
-    font-size: 20px;
- 
-    }
-
-@media screen and (min-width: 1024px) {
-.topinfo {
-    padding-top: 0px;
-    }   
-    }   
+}
 
 
 .item1 {
@@ -535,13 +508,13 @@ th {
     padding-top: 15px;
     padding-left: 25px;
     border-bottom: 1px solid lightgray;
-    }
+}
 
 @media screen and (min-width: 1024px) {
     .item1 {
-    padding-bottom: 10px;
+        padding-bottom: 10px;
     }
-    }
+}
     
 
 .titlecontent {
@@ -552,7 +525,7 @@ th {
     font-family: Lato, sans-serif;
     font-weight: 300;
     font-size: 15px;
-    }
+}
 
 .titleinfo {
     color: rgb(165, 165, 165);
@@ -562,7 +535,7 @@ th {
     font-family: Lato, sans-serif;
     font-weight: lighter;
     font-size: 15px;
-    }
+}
 
 .item1text {   
     display: block;
@@ -571,7 +544,7 @@ th {
     margin-top: 1px;
     margin-bottom: 0px;
     padding-top: 0px;
-    }
+}
 
 
 /* and.... the foooooter*/
@@ -581,7 +554,7 @@ th {
     height: 130px;
     width: 100%;
     background-color: rgb(160, 69, 74);
-    }
+}
 
 
 
