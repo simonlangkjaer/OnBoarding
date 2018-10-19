@@ -99,10 +99,14 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.group:after {
+    display: table;
+    clear: both;
+    }
 
 .searchparent{
-   float: right;
-   padding-right: 5%;
+    float: right;
+    padding-right: 5%;
     }
 
 @media screen and (min-width: 768px) {
@@ -110,7 +114,6 @@ textarea {
     padding-right: 10%;
     }
     }
-                
 
 /* menu with links starts here */
 
