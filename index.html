@@ -28,21 +28,21 @@
 
 
   <nav class="searchparent">
-      <img src="screens/header.png" alt="searchysearchy" />
+    <img src="screens/header.png" alt="searchysearchy" />
   </nav>
 
   <nav class="menu">
-    <a href="#link1">Link 1 Lorem</a>
-    <a href="#link2">Link 2 ipsum</a>
-    <a href="#link3">Link 3 dolor</a>
-    <a href="#link4">Link 4 sit</a>
-    <a href="#link6">Link 5 amet</a>
+    <a class="linknav" href="#link1">Link 1 Lorem</a>
+    <a class="linknav" href="#link2">Link 2 ipsum</a>
+    <a class="linknav" href="#link3">Link 3 dolor</a>
+    <a class="linknav" href="#link4">Link 4 sit</a>
+    <a class="linknav" href="#link6">Link 5 amet</a>
   </nav>
 
   <div class="headerwrapper">
     <picture>
       <source media="(min-width: 768px)" sizes="1980px" srcset="dummy/1280x400.png 768w">
-      <img src=dummy/fff.png class="dummybox1" alt="dummy" />
+      <img src=dummy/768x432.png class="dummybox1" alt="dummy" />
     </picture>
     <h2 class="header1">
       <div class="headline">Headline</div>
@@ -113,7 +113,7 @@
             <li>Circles</li>
           </ul>
           <div class="wraparrowtolink1">
-            <a href="#linkteaser1"> &nbsp; This link leads to the CI </a>
+            <a class="cilinks" href="#linkteaser1"> 
             <svg class="iconarrowlink1">
               <use xlink:href="#icon-arrow-right2"></use>
               <symbol id="icon-arrow-right2" viewBox="0 0 32 32">
@@ -121,10 +121,11 @@
                 <path d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"></path>
               </symbol>
             </svg>
+            &nbsp; This link leads to the CI </a>
           </div>
 
           <div class="wraparrowtolink2">
-            <a href="#linkteaser2"> &nbsp; This link leads to the CI in a new window. </a>
+            <a class="cilinks" href="#linkteaser2"> 
             <svg class="iconarrowlink2">
               <use xlink:href="#icon-arrow-right2"></use>
               <symbol id="icon-arrow-right3" viewBox="0 0 32 32">
@@ -132,6 +133,7 @@
                 <path d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"></path>
               </symbol>
             </svg>
+            &nbsp; This link leads to the CI in a new window. </a>
           </div>
       </div>
 
@@ -152,14 +154,38 @@
         </table>
       </div>
 
+
+      <div class="quotewrap">
+        <q>Someone once said inspiring stuff like this</q>
+      </div>
+
+
     </article>
 
 
     <aside class="asidemain">
 
-      <aside class="subheadline">
-        <img src="screens/module-contact.png" alt="subheadline" />
-      </aside>
+      <div class="asidetopwrapper">
+        <h3 class="subheadline">Subheadline lorem ipsum</h3>
+        <div class="imagetextwrapper">
+          <img src=dummy/100x150.png class="asideimage" alt="lildummy" />
+          <p class="asidevideotext"> <b>Contact No. 3, whose name is even a little bit longer,
+              it will definetly cause a line break. In fact it is really really really long. Longer
+              than anything else. </b> Mock Contact Manager <br><br> T +49 13 24 5457
+            <br> F +49 98 76 54321 <br>
+      
+            <a class="" href="#sendemail"> 
+            <svg class="iconarrowlink3">
+                <use xlink:href="#icon-arrow-right2"></use>
+                <symbol id="icon-arrow-right3" viewBox="0 0 32 32">
+                  <title>arrow-right3</title>
+                  <path d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"></path>
+                </symbol>
+              </svg>
+               Send E-mail </a> 
+          </p>
+        </div>
+      </div>
 
       <div class="wrappersvg">
         <h3 class="topinfo">All Document Types</h3>

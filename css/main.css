@@ -162,18 +162,18 @@ p {
         padding-left: 10%;
     }
 }
-        
 
-a:link {
-    color: lightblue;
-    font-family: Lato, sans-serif;
+.linknav:link {
     font-size: 18px;
-    color: lightblue;
-    text-decoration: none;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+a:link {
+    color: lightblue;
+    text-decoration: none;
 }
 
 a:hover {
@@ -357,7 +357,7 @@ a:hover {
     position: relative;
 }
 
-@media screen and (min-width: 200px) {
+@media screen and (min-width: 0px) {
     .resolution {
         max-width: 100%;
     }  
@@ -409,16 +409,21 @@ a:hover {
     margin-top: 0px;
 }
 
+/*change absolute and relative to css-grid
+to make the arrows sit on the left side 
+of the links or do as the later link example*/
+
 .wraparrowtolink1 {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .iconarrowlink1 {
     position: absolute;
     left: 5px;
-    top: 9px;
+    top: 8px;
     width: 10px;
+    margin-right: 30px;
     height: 10px;
     stroke-width: 0;
     stroke:lightblue;
@@ -433,12 +438,20 @@ a:hover {
 .iconarrowlink2 {
     position: absolute;
     left: 5px;
-    top: 9px;
+    top: 8px;
     width: 10px;
     height: 10px;
     stroke-width: 0;
     stroke:lightblue;
     fill:lightblue;
+}
+
+.cilinks:link {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 table {
@@ -456,21 +469,97 @@ th {
     background-color:#6ba1ce;
 }
 
+.quotewrap {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left:  5px;
+}
+
+q {
+    quotes: "“" "”";
+    font-size: 26px;
+  }
+
+  q:before {
+      content: open-quote;
+      font-size: 5em;
+      line-height: 0px;   
+      vertical-align: -0.52em;
+      margin-left: 10px;
+      margin-right: 5px;
+  }
+
+  q:after {
+      content: close-quote;
+      font-size: normal; 
+      margin-left: 0.25em;
+  }
+
+
+
 /* aside collumn right starts here */
 
-
- /* wwhen content is made delete media quiery */
-.subheadline {    
-    min-width: 100%;
-    margin-top: 30px;
+.asidetopwrapper {
+    width: auto;
+    height: auto;
 }
 
-@media screen and (min-width: 1024px) {
-    .subheadline {
-        width: 100px;
-    }  
+.subheadline {
+    border-bottom: 1px solid lightgray;
+    color: lightgray;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    padding-left: 5px;
 }
-/* when content is made delete media quiery */
+
+.imagetextwrapper {
+    display: inline-block;
+    margin-top: 20px;
+    
+}
+
+.asideimage {
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.imageandlinkwrapper {
+    display: grid;
+}
+
+.asidevideotext {
+    position: relative;
+    display: grid;
+    margin-right: 10px;
+    margin-top: 0px;
+    font-size: 16px;
+}
+
+
+#sendemail {
+    font-size: 6px;
+}   
+
+.iconarrowlink3 {
+    width: 15px;
+    height: 15px;
+    vertical-align: -0.1em;
+    stroke-width: 0;
+    stroke:lightblue;
+    fill:lightblue;
+}
+
+.icon-arrow-right3 {
+    position: absolute;
+ 
+}
+
+.linkmarginfix:link {
+    color: lightblue;
+    text-decoration: none;
+}
+
 
 .asidemain {
     margin-bottom: 10px;
