@@ -61,7 +61,40 @@
   </div>
 
   <nav class="breadcrumbs">
-    <img src="screens/module-breadcrumb.png" alt="breadcrumbs" />
+
+    <a class="breadcrumblinkhome" href="#linkteaser1">
+      <svg class="breadcrumbarrows">
+        <use xlink:href="#icon-arrow-right2"></use>
+        <symbol id="icon-arrow-right3" viewBox="0 0 32 32">
+          <title>arrowright</title>
+          <path d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"></path>
+        </symbol>
+      </svg>
+      Home
+    </a>
+
+    <a class="breadcrumblinktestfolder" href="#linkteaser1">
+      <svg class="breadcrumbarrows">
+        <use xlink:href="#icon-arrow-right2"></use>
+        <symbol id="icon-arrow-right3" viewBox="0 0 32 32">
+          <title>arrowright</title>
+          <path d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"></path>
+        </symbol>
+      </svg>
+      Test Folder
+    </a>
+
+    <a class="breadcrumblinktestonly" href="#linkteaser1">
+      <svg class="breadcrumbarrows">
+        <use xlink:href="#icon-arrow-right2"></use>
+        <symbol id="icon-arrow-right3" viewBox="0 0 32 32">
+          <title>arrowright</title>
+          <path d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"></path>
+        </symbol>
+      </svg>
+      Test
+    </a>
+
   </nav>
 
   <div class="mainwrapper">
@@ -69,39 +102,54 @@
     <article class="mainarticle">
       <h1 class="titletext"> Fundamentals I: Layout, Styling & Semantics </h1>
       <h2 class="subject"> Image section (Landscape, no caption)</h2>
-      <img src=dummy/480x240.png class="dummybox2" alt="dumdumdum" />
-      <p class="loremipsum1"> Ut lobortis maximus turpis, a tempus. Suspendisse eu tellus auctor, elementum erat id,
-        dignissim ligula. Etiam convallis magna scelerisque massa vestibulum tristique. Sed ac eleifend enim, sit amet
-        tempor tortor. Donec interdum, nunc eu luctus laoreet, magna mauris eleifend dui, vitae malesuada massa dui id
-        mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean tristique massa purus, sit amet
-        tempor ligula tristique in. Cras dignissim dapibus diam quis malesuada. Donec nec dapibus dolor, dictum
-        placerat arcu. Donec in purus justo. Aliquam ac orci auctor, venenatis justo ac, tempus nulla. Cras imperdiet
-        faucibus urna at fermentum. Integer luctus vehicula libero et eleifend. Praesent tincidunt tellus a nulla
-        faucibus, ut molestie est ullamcorper. Aliquam faucibus nulla nec convallis volutpat. Nunc neque massa,
-        condimentum ac tincidunt ut, interdum in ligula. Fusce facilisis velit tortor, ut tempor lectus venenatis eget.
-        Curabitur volutpat mauris imperdiet, rutrum risus eu, imperdiet libero. Suspendisse ornare dapibus nisl, nec
-        venenatis purus blandit tincidunt. </p>
-      <h2 class="videosection"> Video section </h2>
-      <div class="wrapiconinres">
-        <img src=dummy/1920x1080.png class="resolution" alt="resresres" />
-        <svg class="iconplay">
-          <use xlink:href="#icon-play3"></use>
-          <symbol id="icon-play3" viewBox="0 0 32 32">
-            <title>play3</title>
-            <path d="M6 4l20 12-20 12z"></path>
-          </symbol>
-        </svg>
+      <div class="picture480textwrap">
+        <img src=dummy/480x240.png class="dummybox2" alt="dumdumdum" />
+        <p class="loremipsum1"> Ut lobortis maximus turpis, a tempus. Suspendisse eu tellus auctor, elementum erat id,
+          dignissim ligula. Etiam convallis magna scelerisque massa vestibulum tristique. Sed ac eleifend enim, sit
+          amet
+          tempor tortor. Donec interdum, nunc eu luctus laoreet, magna mauris eleifend dui, vitae malesuada massa dui
+          id
+          mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean tristique massa purus, sit amet
+          tempor ligula tristique in. Cras dignissim dapibus diam quis malesuada. Donec nec dapibus dolor, dictum
+          placerat arcu. Donec in purus justo. Aliquam ac orci auctor, venenatis justo ac, tempus nulla. Cras imperdiet
+          faucibus urna at fermentum. Integer luctus vehicula libero et eleifend. Praesent tincidunt tellus a nulla
+          faucibus, ut molestie est ullamcorper. Aliquam faucibus nulla nec convallis volutpat. Nunc neque massa,
+          condimentum ac tincidunt ut, interdum in ligula. Fusce facilisis velit tortor, ut tempor lectus venenatis
+          eget.
+          Curabitur volutpat mauris imperdiet, rutrum risus eu, imperdiet libero. Suspendisse ornare dapibus nisl, nec
+          venenatis purus blandit tincidunt. </p>
       </div>
-      <p class="loremipsum2"> Ut lobortis maximus turpis, a tempus. Suspendisse eu tellus auctor, elementum erat id,
-        dignissim ligula. Etiam convallis magna scelerisque massa vestibulum tristique. Sed ac eleifend enim, sit amet
-        tempor tortor. Donec interdum, nunc eu luctus laoreet, magna mauris eleifend dui, vitae malesuada massa dui id
-        mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean tristique massa purus, sit amet
+
+      <div class="mainvideotextwrap">
+        <h2 class="videosection"> Video section </h2>
+        <div class="wrapiconinres">
+          <img src=dummy/1920x1080.png class="resolution" alt="resresres" />
+          <svg class="iconplay">
+            <use xlink:href="#icon-play3"></use>
+            <symbol id="icon-play3" viewBox="0 0 32 32">
+              <title>play3</title>
+              <path d="M6 4l20 12-20 12z"></path>
+            </symbol>
+          </svg>
+        </div>
+      </div>
+      <p class="loremipsum2"> Ut lobortis maximus turpis, a tempus. Suspendisse eu tellus auctor, elementum erat
+        id,
+        dignissim ligula. Etiam convallis magna scelerisque massa vestibulum tristique. Sed ac eleifend enim, sit
+        amet
+        tempor tortor. Donec interdum, nunc eu luctus laoreet, magna mauris eleifend dui, vitae malesuada massa dui
+        id
+        mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean tristique massa purus, sit
+        amet
         tempor ligula tristique in. Cras dignissim dapibus diam quis malesuada. Donec nec dapibus dolor, dictum
-        placerat arcu. Donec in purus justo. Aliquam ac orci auctor, venenatis justo ac, tempus nulla. Cras imperdiet
+        placerat arcu. Donec in purus justo. Aliquam ac orci auctor, venenatis justo ac, tempus nulla. Cras
+        imperdiet
         faucibus urna at fermentum. Integer luctus vehicula libero et eleifend. Praesent tincidunt tellus a nulla
         faucibus, ut molestie est ullamcorper. Aliquam faucibus nulla nec convallis volutpat. Nunc neque massa,
-        condimentum ac tincidunt ut, interdum in ligula. Fusce facilisis velit tortor, ut tempor lectus venenatis eget.
-        Curabitur volutpat mauris imperdiet, rutrum risus eu, imperdiet libero. Suspendisse ornare dapibus nisl, nec
+        condimentum ac tincidunt ut, interdum in ligula. Fusce facilisis velit tortor, ut tempor lectus venenatis
+        eget.
+        Curabitur volutpat mauris imperdiet, rutrum risus eu, imperdiet libero. Suspendisse ornare dapibus nisl,
+        nec
         venenatis purus blandit tincidunt. </p>
 
       <div class="teasercontainer">
@@ -113,45 +161,46 @@
             <li>Circles</li>
           </ul>
           <div class="wraparrowtolink1">
-            <a class="cilinks" href="#linkteaser1"> 
-            <svg class="iconarrowlink1">
-              <use xlink:href="#icon-arrow-right2"></use>
-              <symbol id="icon-arrow-right2" viewBox="0 0 32 32">
-                <title>arrow-right2</title>
-                <path d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"></path>
-              </symbol>
-            </svg>
-            &nbsp; This link leads to the CI </a>
+            <a class="cilinks" href="#linkteaser1">
+              <svg class="iconarrowlink1">
+                <use xlink:href="#icon-arrow-right2"></use>
+                <symbol id="icon-arrow-right2" viewBox="0 0 32 32">
+                  <title>arrow-right2</title>
+                  <path d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"></path>
+                </symbol>
+              </svg>
+              &nbsp; This link leads to the CI </a>
           </div>
 
           <div class="wraparrowtolink2">
-            <a class="cilinks" href="#linkteaser2"> 
-            <svg class="iconarrowlink2">
-              <use xlink:href="#icon-arrow-right2"></use>
-              <symbol id="icon-arrow-right3" viewBox="0 0 32 32">
-                <title>arrow-right2</title>
-                <path d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"></path>
-              </symbol>
-            </svg>
-            &nbsp; This link leads to the CI in a new window. </a>
+            <a class="cilinks" href="#linkteaser2">
+              <svg class="iconarrowlink2">
+                <use xlink:href="#icon-arrow-right2"></use>
+                <symbol id="icon-arrow-right3" viewBox="0 0 32 32">
+                  <title>arrow-right2</title>
+                  <path d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"></path>
+                </symbol>
+              </svg>
+              &nbsp; This link leads to the CI in a new window. </a>
           </div>
       </div>
-
-      <div class="table">
-        <table>
-          <tr>
-            <th>Super Nice</th>
-            <th>Duper Table</th>
-          </tr>
-          <tr>
-            <td>Super</td>
-            <td>Duper</td>
-          </tr>
-          <tr>
-            <td>Nice</td>
-            <td>Table</td>
-          </tr>
-        </table>
+      <div class="tablewrap">
+        <div class="table">
+          <table>
+            <tr>
+              <th>Super Nice</th>
+              <th>Duper Table</th>
+            </tr>
+            <tr>
+              <td>Super</td>
+              <td>Duper</td>
+            </tr>
+            <tr>
+              <td>Nice</td>
+              <td>Table</td>
+            </tr>
+          </table>
+        </div>
       </div>
 
 
@@ -159,9 +208,92 @@
         <q>Someone once said inspiring stuff like this</q>
       </div>
 
+      <h2 class="formheadline">Form</h2>
+
+
+
+      <section class="sectionwrap">
+
+        <div class="sectiontextwrap">
+          <p class="sectiontext">Text</p>
+          <form class="textform" name="text">
+            <input type="text" />
+          </form>
+        </div>
+
+        <br>
+
+        <div class="sectionmandatorywrap">
+          <p class="sectiontextmandatory">Text mandatory*</p>
+          <form class="textmandatoryform">
+            <input type="text" />
+          </form>
+        </div>
+
+        <br>
+
+        <div class="sectionnumberwrap">
+          <p class="sectionnumber">Number</p>
+          <select class="numberform">
+          </select>
+        </div>
+
+        <br>
+
+        <div class="sectiontextareawrap">
+          <p class="sectiontextarea">text area</p>
+          <textarea class="textareaform" rows="4">
+
+          </textarea>
+        </div>
+
+        <div class="checkboxwrap">
+          <p class="checkboxtext">Checkbox</p>
+          <form class="checkboxform">
+            <input type="checkbox" /> &nbsp; yes
+            <br>
+            <input type="checkbox" /> &nbsp; no
+          </form>
+        </div>
+
+        <div class="radiowrap">
+          <p class="radiotext">radio</p>
+          <form class="radioform">
+            <input type="radio" /> &nbsp; yes
+            <br>
+            <input type="radio" /> &nbsp; no
+          </form>
+        </div>
+
+        <div class="selectboxwrap">
+          <p class="selectboxtext"> select box</p>
+          <select class="selectboxselect">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </div>
+
+        <br>
+
+        <div class="emailmandatorywrap">
+          <p class="emailmandatorytext">e-mail mandatory*</p>
+          <form class="emailmandatoryform">
+            <input type="text" />
+          </form>
+        </div>
+
+      </section>
+
+      <div class="sendcancelbuttonwrap">
+          <form class="sendcancelbutton">
+            <button class="colorbuttonsend" type="submit" value="Submit">Send</button>
+            <button class="colorbuttoncancel" type="submit" value="Submit">Cancel</button>
+          </form>
+          <p class="buttonssendcanceltext">All fields marked with an asterisk (*) are mandatory</p>
+        </div>
+
 
     </article>
-
 
     <aside class="asidemain">
 
@@ -173,16 +305,16 @@
               it will definetly cause a line break. In fact it is really really really long. Longer
               than anything else. </b> Mock Contact Manager <br><br> T +49 13 24 5457
             <br> F +49 98 76 54321 <br>
-      
-            <a class="" href="#sendemail"> 
-            <svg class="iconarrowlink3">
+
+            <a class="" href="#sendemail">
+              <svg class="iconarrowlink3">
                 <use xlink:href="#icon-arrow-right2"></use>
                 <symbol id="icon-arrow-right3" viewBox="0 0 32 32">
                   <title>arrow-right3</title>
                   <path d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"></path>
                 </symbol>
               </svg>
-               Send E-mail </a> 
+              Send E-mail </a>
           </p>
         </div>
       </div>

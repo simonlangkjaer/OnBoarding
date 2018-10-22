@@ -280,11 +280,14 @@ a:hover {
 
 
 .breadcrumbs {
+    position: relative;
     display: flex;
     justify-content: flex-start;
+    flex-direction: row;
     margin-left: 5px;
     margin-top: 50px;
     margin-bottom: 0px;
+    font-size: 12px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -294,7 +297,26 @@ a:hover {
     }
 }
 
+.breadcrumblinkhome {
+    flex-grow: 0.02;
+}
 
+.breadcrumblinktestfolder {
+    flex-grow: 0.02;
+}
+
+.breadcrumblinktestonly {
+    flex-grow: 0.02;
+}
+
+.breadcrumbarrows {
+    width: 10px;
+    height: 10px;
+    vertical-align: -0.1em;
+    stroke-width: 0;
+    stroke:lightblue;
+    fill:lightblue;
+}
 
 /* main-article with grid here */
 
@@ -317,8 +339,9 @@ a:hover {
 .mainarticle {
     height: auto;
     margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
-
 
 
 /* content collumn left starts here */
@@ -339,7 +362,7 @@ a:hover {
     float: left;
     width: 100%;
     margin-right: 20px;
-    max-width: 480px;
+    max-width: 500px;
     max-height: 240px;
 }
 
@@ -348,9 +371,24 @@ a:hover {
     margin-left: 5px;
 }
 
+/* how do i make the text stay at 1900px*/
+.picture480textwrap{
+    width: auto;
+    height: auto;
+}
+
+.mainvideotextwrap{
+    display: inline-block;
+    width: auto;
+    height: auto;
+  
+}
+
 .videosection {
+    display: block;
     margin-left: 5px;
     margin-bottom: 10px;
+    padding-top: 20px;
 }
 
 .wrapiconinres {
@@ -390,8 +428,6 @@ a:hover {
 
 
 .teasercontainer {
-    width: 100%;
-    height: 100%;
     margin-bottom: 50px;
 }
 
@@ -470,9 +506,10 @@ th {
 }
 
 .quotewrap {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 40px;
+    margin-bottom: 30px;
     margin-left:  5px;
+    margin-right: 5px;
 }
 
 q {
@@ -495,6 +532,224 @@ q {
       margin-left: 0.25em;
   }
 
+
+
+/* Forms start here */
+
+
+
+
+.formheadline {
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sectionwrap {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+input[type=text] {
+    width: 100%;
+    height: 30px;
+}
+
+.numberform {
+    width: 100%;
+}
+
+.textareaform {
+    width: 100%;
+}
+
+.selectboxselect {
+    width: 100%;
+}
+
+
+@media screen and (min-width: 768px) {
+    .sectiontextwrap {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-column-gap: 20px;
+    }  
+}
+
+@media screen and (min-width: 768px) {
+    .sectiontext {
+        text-align: right;
+        width: 100%;
+        margin: 5px;
+        padding: 0px;
+    }  
+}
+
+@media screen and (min-width: 768px) {
+    .sectionmandatorywrap {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-column-gap: 20px;
+    }  
+}
+
+@media screen and (min-width: 768px) {
+    .sectiontextmandatory {
+        text-align: right;
+        width: 100%;
+        margin: 5px;
+        padding: 0px;
+    }  
+}
+
+@media screen and (min-width: 768px) {
+    .sectionnumberwrap  {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-column-gap: 20px;
+    }  
+}
+
+@media screen and (min-width: 768px) {
+    .sectionnumber {
+        text-align: right;
+        width: 100%;
+        margin: 5px;
+        padding: 0px;
+    }  
+}
+
+
+@media screen and (min-width: 768px) {
+    .sectiontextareawrap  {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-column-gap: 20px;
+    }  
+}
+
+@media screen and (min-width: 768px) {
+    .sectiontextarea {
+        text-align: right;
+        width: 100%;
+        margin: 5px;
+        padding: 0px;
+    }  
+}
+
+@media screen and (min-width: 768px) {
+    .checkboxwrap  {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-column-gap: 20px;
+        margin-top: 20px;
+    }  
+}
+
+@media screen and (min-width: 768px) {
+    .checkboxtext {
+        text-align: right;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }  
+}
+
+@media screen and (min-width: 768px) {
+    .radiowrap  {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-column-gap: 20px;
+        margin-top: 20px;
+    }  
+}
+
+@media screen and (min-width: 768px) {
+    .radiotext {
+        text-align: right;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }  
+}
+
+@media screen and (min-width: 768px) {
+    .selectboxwrap  {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-column-gap: 20px;
+        margin-top: 20px;
+    }  
+}
+
+@media screen and (min-width: 768px) {
+    .selectboxtext {
+        text-align: right;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }  
+}
+
+@media screen and (min-width: 768px) {
+    .emailmandatorywrap  {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-column-gap: 20px;
+        margin-top: 20px;
+    }  
+}
+
+@media screen and (min-width: 768px) {
+    .emailmandatorytext {
+        text-align: right;
+        width: 100%;
+        margin: 5px;
+        padding: 0px;
+
+    }  
+}
+
+.sendcancelbuttonwrap {
+    margin-top: 40px;
+    border-top: 1px solid lightgray;
+    padding-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .sendcancelbuttonwrap  {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-column-gap: 20px;
+        margin-top: 20px;
+    }  
+}
+
+@media screen and (min-width: 768px) {
+    .sendcancelbutton {
+        width: 100%;
+        margin: 5px;
+        padding: 0px;
+
+    }  
+}
+
+.buttonssendcanceltext {
+    margin: 0px;
+    padding-top: 5px;
+    text-align: right;
+}
+
+.colorbuttonsend {
+    background-color: #0d62a8;
+    color: white;
+}
+
+.colorbuttoncancel {
+    background-color: lightgrey;
+    color: white;
+}
 
 
 /* aside collumn right starts here */
