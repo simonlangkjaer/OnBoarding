@@ -129,7 +129,7 @@ p {
     font-weight: 300;
 }
 
-/* little golden orb from harry potter */
+/* searchy at top */
 
 .searchparent{
     display: flex;
@@ -143,17 +143,14 @@ p {
     }
 }
 
-
 /* menu with links starts here */
-
-
 
 .menu {
     flex-wrap: wrap;
     display: flex;
     width: 100%;
     height: 100%;
-    top: 10px;
+  
 }
 
 @media screen and (min-width: 768px) {
@@ -171,16 +168,16 @@ p {
     padding-right: 15px;
 }
 
+
+
+a:link:hover {
+    color: rgb(8, 91, 146);
+}
+
 a:link {
     color: lightblue;
     text-decoration: none;
 }
-
-a:hover {
-    color: rgb(8, 91, 146);
-}
-
-
 
 /* main article starts here */
 
@@ -228,8 +225,8 @@ a:hover {
     position: absolute;
     margin: 10px 0 0 10px;
     font-family: Lato, sans-serif;
-    font-weight: 200;
-    font-size: 30px;
+    font-weight: 100;
+    font-size: 28px;
     color: white;
     text-decoration-color: none;
 }
@@ -318,8 +315,12 @@ a:hover {
     fill:lightblue;
 }
 
-/* main-article with grid here */
+.breadcrumblinkhome:link {
+    padding-left: 5px;
+}
 
+
+/* main-article with grid here */
 
 
 .mainwrapper {
@@ -330,6 +331,7 @@ a:hover {
     .mainwrapper {
         width: 80%;
         margin-left: 10%;
+        margin-right: 10%;
         display: grid;
         grid-template-columns: 3fr 1fr;
         grid-column-gap: 20px;
@@ -339,8 +341,8 @@ a:hover {
 .mainarticle {
     height: auto;
     margin-bottom: 10px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 
@@ -538,12 +540,11 @@ q {
 
 
 
-
 .formheadline {
     display: inline-block;
     margin-left: 5px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .sectionwrap {
@@ -735,10 +736,18 @@ input[type=text] {
     }  
 }
 
+@media screen and (min-width: 768px) {
+    .buttonssendcanceltext {
+        width: 100%;
+        margin: 5px;
+        padding: 0px;
+        text-align: right;
+    }  
+}
+
 .buttonssendcanceltext {
     margin: 0px;
     padding-top: 5px;
-    text-align: right;
 }
 
 .colorbuttonsend {
@@ -891,19 +900,211 @@ input[type=text] {
 }
 
 
-/* and.... the foooooter*/
+/* teaser section enabled */
+
+.wrapsectionteaser {
+    margin-top: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 40px;
+}
 
 
-.footer {
-    height: 130px;
-    width: 100%;
-    background-color: rgb(160, 69, 74);
+@media screen and (min-width: 768px) {
+    .wrapsectionteaser {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }  
+}
+
+
+@media screen and (min-width: 0px) {
+    .teaserimage1500 {
+       width: 100%;
+    }  
+}
+
+.lastlink:link {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+
+.wrapsectionmore {
+    margin-top: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 40px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .wrapsectionmore {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }  
+}
+
+@media screen and (min-width: 0px) {
+    .teaserimage768{
+       width: 100%;
+    }  
+}
+
+.timingofvideo {
+    text-align: right;
+}
+
+
+@media screen and (min-width: 0px) {
+    .teaserimage169{
+       width: 100%;
+    }  
+}
+
+.teaserrowheadline {
+    padding-left: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .teaserrowheadline{
+       margin-right: 10%;
+       margin-left: 10%;
+    }  
+}
+
+.iconplayagain1 {
+    position: relative;
+}
+
+.iconplayagain2 {
+    position: relative;
+}
+
+.wrapinsomethingelse {
+    height: auto;
+}
+
+@media screen and (min-width: 600px) {
+    .bigfinalwrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0fr 0fr;
+        grid-column-gap: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }  
+}
+
+@media screen and (min-width: 1024px) {
+    .bigfinalwrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }  
+}
+
+@media screen and (min-width: 1024px) {
+    .thisisatestvideowrap {
+    grid-area: 2/3/3/1;
+}
+}
+
+.thisisatestvideowrap {
+    margin-top: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+    .finalgrid2wrap {
+    grid-area: 1/2/3/3;
+    
+}
+}
+
+.subheadline2 {
+    border-bottom: 1px solid lightgray;
+    color: lightgray;
+    padding-left: 5px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
 }
 
 
 
 
 
+/* and.... the foooooter*/
+
+.wrapfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(77, 77, 77);
+    padding-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .wrapfooter {
+        padding-bottom: 10px;
+        flex-direction: row;
+    }
+}
+
+.wrapfooterlink {
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .wrapfooterlink {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+}
+
+.footer {
+    color: white;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.iconarrowlink5 {
+    width: 10px;
+    height: 10px;
+    vertical-align: -0.1em;
+    stroke-width: 0;
+    stroke:white;
+    fill:white;
+}
+
+.icon-arrow-right5 {
+    position: absolute;
+}
+
+.linkfooter:link {
+   color: white;
+   text-decoration: none;
+   font-size: 12px;
+   padding-top: 20px;
+}
 
 
 
