@@ -134,11 +134,11 @@ p {
 .wrapsearch {
     display:flex;
     justify-content: flex-end;
-    position: relative;
 }
 
 .searchparent {
     margin-right: 10%;
+    margin-top: 5px;
 }
 
 .searchparent input[type=text] {
@@ -152,14 +152,13 @@ p {
 .icon-icon-search {
     position: absolute; 
     padding-left: 200px;
-    top: 6px;
+    top: 10px;
     width: 1em;
     height: 1em;
     stroke-width: 0;
     stroke: #0d62a8;
     fill: #0d62a8;
-
-  }
+}
 
 @media screen and (min-width: 768px) {
     .searchparent {
@@ -172,9 +171,6 @@ p {
 .menu {
     flex-wrap: wrap;
     display: flex;
-    width: 100%;
-    height: 100%;
-  
 }
 
 @media screen and (min-width: 768px) {
@@ -186,10 +182,7 @@ p {
 
 .linknav:link {
     font-size: 18px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 5px 15px 5px 15px;
 }
 
 a:link:hover {
@@ -197,22 +190,23 @@ a:link:hover {
 }
 
 a:link {
-    color: lightblue;
+    color: #6ba1ce;
     text-decoration: none;
 }
 
 
-
 /* main article starts here */
 
-.wrappersvg {
-    margin-right: 15px;
-    margin-left: 15px;
-}
 
 .headerwrapper {
     position: relative;
 }  
+
+@media screen and (min-width: 1600px) {
+    .headerwrapper {
+        background-color: #6ba1ce;
+    }    
+}
 
 .dummybox1 {
     width: 100%;
@@ -250,21 +244,16 @@ a:link {
 
 .headline {
     position: absolute;
-    margin: 10px 0 0 10px;
-    font-family: Lato, sans-serif;
+    margin: 10px 0px 0px 10px;
     font-weight: 100;
-    font-size: 28px;
     color: white;
-    text-decoration-color: none;
 }
 
 .headlinetext {
     position: absolute;
     margin-left: 10px;
     margin-top: 70px;
-    font-family: Lato, sans-serif;
-    font-weight: normal;
-    font-size: 16px;
+    font-weight: 300;
     color: white;
 }
 
@@ -274,7 +263,6 @@ a:link {
     padding-right: 80px;
     margin-left: 10px;
     margin-top: 115px;
-    font-family: Lato, sans-serif;
     font-weight: normal;
     font-size: 18px;
     color: rgb(6, 125, 165);
@@ -283,7 +271,6 @@ a:link {
 
 .headlinetextwrapper {
     position: relative;
-
 }
 
 .icon1 {
@@ -312,16 +299,16 @@ a:link {
     margin-top: 50px;
     margin-bottom: 0px;
     font-size: 12px;
+    margin-left: 15px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1600px) {
     .breadcrumbs {
         margin-left: 10%;
     }
 }
 
 .breadcrumblinkhome {
-    margin-left: 15px;
     flex-grow: 0.02;
 }
 
@@ -336,7 +323,6 @@ a:link {
 .breadcrumbarrows {
     width: 10px;
     height: 10px;
-    vertical-align: -0.1em;
     stroke-width: 0;
     stroke:lightblue;
     fill:lightblue;
@@ -347,31 +333,35 @@ a:link {
 
 
 .mainwrapper {
-    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 @media screen and (min-width: 1024px) {
+    .mainwrapper {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-column-gap: 30px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
     .mainwrapper {
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
         display: grid;
         grid-template-columns: 3fr 1fr;
-        grid-column-gap: 20px;
+        grid-column-gap: 30px;
     }
 }
     
 .mainarticle {
     height: auto;
     margin-bottom: 10px;
-    margin-right: 15px;
-    margin-left: 15px;
 }
 
-
 /* content collumn left starts here */
-
-
 
 .titletext {
     margin-bottom: 10px;
@@ -385,29 +375,21 @@ a:link {
     float: left;
     width: 100%;
     margin-right: 20px;
+    margin-bottom: 5px;
     max-width: 500px;
     max-height: 240px;
 }
 
-.loremipsum1 {
-    flex: wrap;
-}
-
-/* how do i make the text stay at 1900px*/
-.picture480textwrap{
-    width: auto;
-    height: auto;
-}
+/* something is not right here at the 
+vidsec, at 5000px the text jumps up
+to the next section */
 
 .mainvideotextwrap{
-    display: inline-block;
-    width: auto;
-    height: auto;
-  
+    display: block;
+    width: 100%;
 }
 
 .videosection {
-    display: block;
     margin-bottom: 10px;
     padding-top: 20px;
 }
@@ -438,14 +420,7 @@ a:link {
     opacity: 0.5;
 }
 
-.loremipsum2 {
-    flex: wrap;
-}
-
-
 /* teaser section starts here */
-
-
 
 .teasercontainer {
     margin-bottom: 50px;
@@ -455,17 +430,9 @@ a:link {
     margin-bottom: 0px;
 }
 
-.teasertext {  
-}
-
 .littlelist {
-    margin-left: 5px;
-    margin-top: 0px;
+   padding-inline-start: 20px;
 }
-
-/*change absolute and relative to css-grid
-to make the arrows sit on the left side 
-of the links or do as the later link example*/
 
 .wraparrowtolink1 {
     position: relative;
@@ -474,10 +441,8 @@ of the links or do as the later link example*/
 
 .iconarrowlink1 {
     position: absolute;
-    left: 5px;
     top: 8px;
     width: 10px;
-    margin-right: 30px;
     height: 10px;
     stroke-width: 0;
     stroke:lightblue;
@@ -491,7 +456,6 @@ of the links or do as the later link example*/
 
 .iconarrowlink2 {
     position: absolute;
-    left: 5px;
     top: 8px;
     width: 10px;
     height: 10px;
@@ -504,8 +468,6 @@ of the links or do as the later link example*/
     font-size: 14px;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 table {
@@ -521,6 +483,8 @@ th, td {
 
 th {
     background-color:#6ba1ce;
+    color: white;
+    font-weight: 400;
 }
 
 .quotewrap {
@@ -558,12 +522,7 @@ q {
       padding-left: 38px;
   }
 
-
-
-
 /* Forms start here */
-
-
 
 .formheadline {
     display: inline-block;
@@ -571,28 +530,10 @@ q {
     margin-bottom: 20px;
 }
 
-.sectionwrap {
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
 input[type=text] {
     width: 100%;
     height: 30px;
 }
-
-.numberform {
-    width: 100%;
-}
-
-.textareaform {
-    width: 100%;
-}
-
-.selectboxselect {
-    width: 100%;
-}
-
 
 @media screen and (min-width: 768px) {
     .sectiontextwrap {
@@ -605,9 +546,7 @@ input[type=text] {
 @media screen and (min-width: 768px) {
     .sectiontext {
         text-align: right;
-        width: 100%;
         margin: 5px;
-        padding: 0px;
     }  
 }
 
@@ -622,9 +561,7 @@ input[type=text] {
 @media screen and (min-width: 768px) {
     .sectiontextmandatory {
         text-align: right;
-        width: 100%;
         margin: 5px;
-        padding: 0px;
     }  
 }
 
@@ -639,9 +576,7 @@ input[type=text] {
 @media screen and (min-width: 768px) {
     .sectionnumber {
         text-align: right;
-        width: 100%;
         margin: 5px;
-        padding: 0px;
     }  
 }
 
@@ -657,9 +592,7 @@ input[type=text] {
 @media screen and (min-width: 768px) {
     .sectiontextarea {
         text-align: right;
-        width: 100%;
         margin: 5px;
-        padding: 0px;
     }  
 }
 
@@ -675,9 +608,7 @@ input[type=text] {
 @media screen and (min-width: 768px) {
     .checkboxtext {
         text-align: right;
-        width: 100%;
         margin: 0px;
-        padding: 0px;
     }  
 }
 
@@ -693,9 +624,7 @@ input[type=text] {
 @media screen and (min-width: 768px) {
     .radiotext {
         text-align: right;
-        width: 100%;
         margin: 0px;
-        padding: 0px;
     }  
 }
 
@@ -711,9 +640,7 @@ input[type=text] {
 @media screen and (min-width: 768px) {
     .selectboxtext {
         text-align: right;
-        width: 100%;
         margin: 0px;
-        padding: 0px;
     }  
 }
 
@@ -729,10 +656,7 @@ input[type=text] {
 @media screen and (min-width: 768px) {
     .emailmandatorytext {
         text-align: right;
-        width: 100%;
         margin: 5px;
-        padding: 0px;
-
     }  
 }
 
@@ -775,12 +699,12 @@ input[type=text] {
 }
 
 .colorbuttonsend {
-    background-color: #0d62a8;
+    background-color: #6ba1ce;
     padding: 5px;
     margin-right: 10px;
     color: white;
     font-weight: 100;
-    border: 1px solid #0d62a8;
+    border: 1px solid #6ba1ce;
 }
 
 .colorbuttoncancel {
@@ -804,19 +728,17 @@ input[type=text] {
     color: lightgray;
     padding-bottom: 20px;
     margin-bottom: 20px;
-    padding-left: 5px;
 }
 
 .imagetextwrapper {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 20x;
     
 }
 
 .asideimage {
     float: left;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 .imageandlinkwrapper {
@@ -860,6 +782,13 @@ input[type=text] {
     margin-bottom: 10px;
 }
 
+@media screen and (min-width: 768px) {
+    .asidemain {
+        margin-left: 0px;
+    }  
+}
+
+
 .iconsection {
     display: inline-block;
     width: 3em;
@@ -877,7 +806,6 @@ input[type=text] {
 }
 
 .topinfo {
-    color: lightgray;
     padding-left: 5px;
     margin-bottom: 0px;
     padding-bottom: 10px;
@@ -888,26 +816,9 @@ input[type=text] {
 
 .item1 {
     display: flex;
-    height: 60px;
     padding-top: 15px;
-    padding-left: 25px;
+    padding-bottom: 15px;
     border-bottom: 1px solid lightgray;
-}
-
-@media screen and (min-width: 1024px) {
-    .item1 {
-        padding-bottom: 10px;
-    }
-}
-
-.item1 {
-    display: flex;
-}
-
-@media screen and (min-width: 1024px) {
-    .item1 {
-        
-    }
 }
 
 
@@ -969,8 +880,6 @@ input[type=text] {
         grid-column-gap: 20px;
         margin-left: 10%;
         margin-right: 10%;
-        padding-left: 15px;
-        padding-right: 15px;
     }  
 }
 
@@ -985,13 +894,16 @@ input[type=text] {
     font-size: 14px;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
 }
-
 
 .textstuffwrap {
     margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .textstuffwrap {
+        margin-top: 0px;
+    }  
 }
 
 .teaserrow {
@@ -1033,8 +945,17 @@ hr{
 border: 0;
 height: 1px;
 background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+margin-left: 15px;
+margin-right: 15px;
 }
 
+@media screen and (min-width: 1024px) {
+    hr{
+       width: 80%;
+       margin-right: 1%;
+       margin-left: 10%;
+    }  
+}
 
 @media screen and (min-width: 0px) {
     .teaserimage169{
@@ -1042,22 +963,16 @@ background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75
     }  
 }
 
-
-
-
 .teaserrowheadline{
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 10px;
-
 }
 
 @media screen and (min-width: 768px) {
     .teaserrowheadline{
         margin-right: 10%;
         margin-left: 10%;
-        padding-left: 15px;
-        padding-right: 15px;
     }  
 }
 
@@ -1091,8 +1006,6 @@ background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75
         grid-column-gap: 20px;
         margin-left: 10%;
         margin-right: 10%;
-        padding-left: 15px;
-        padding-right: 15px;
     }  
 }
 
@@ -1127,16 +1040,13 @@ background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75
 
 .subheadline2 {
     border-bottom: 1px solid lightgray;
-    color: lightgray;
     margin-bottom: 0px;
     padding-bottom: 10px;
 }
 
 
-
-
-
 /* and.... the foooooter*/
+
 
 .wrapfooter {
     display: flex;
