@@ -535,6 +535,15 @@ input[type=text] {
     height: 30px;
 }
 
+.textareaform {
+    width: 100%;
+}
+
+.numberform {
+    width: 100%;
+}
+
+
 @media screen and (min-width: 768px) {
     .sectiontextwrap {
         display: grid;
