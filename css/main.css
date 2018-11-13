@@ -130,31 +130,30 @@ p {
 }
 
 
-#headershrink {
+.headershrink {
     background-color:white;
     position: sticky;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-column-gap: 0px;
     z-index: 99;
     top: 0;
     transition: 0.7s;
-    min-height: 30px;
-    height: 67px;
+    min-height: 67px;
     box-shadow: 0px 1px 5px 1px rebeccapurple;
 }
 
-@media screen and (max-width: 768px) {
-    #headershrink {
-        height: auto;
-    }
+.showheadershrink {
+    grid-template-rows: 0px;
+    transition: 0.7s;
+    min-height: 30px !important;
 }
 
 /* searchy at top */
 
 .wrapsearch {
+    position: relative;
     opacity: 0;
-    transition: 0.7s;
+    transition: 0.5s;
     height: 40px;
     justify-self: flex-end;
 }
@@ -880,7 +879,7 @@ input[type=text] {
 }
 
 .titleinfo span {
-    flex-wrap: wrap; 
+    display: flex;
 } 
 
 .mb {
