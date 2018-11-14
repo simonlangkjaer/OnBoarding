@@ -17,7 +17,7 @@
     }
   } 
 
-// function 
+// slider
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -47,3 +47,13 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }
+
+$(".headlinebox").click(function(e){
+  e.preventDefault();
+  $(".headlinetext").toggle();  
+});
+
+$(".icon1").click(function(e){
+  e.preventDefault();
+  $(".headlinetext").toggle();  
+});

@@ -427,6 +427,7 @@ a:link {
     margin-top: 70px;
     font-weight: 300;
     color: white;
+    display: none;
 }
 
 .headlinebox {
@@ -454,7 +455,7 @@ a:link {
     stroke:  rgb(6, 125, 165);
     fill:  rgb(6, 125, 165);
     top: 118px;
-    left: 150px;  
+    left: 200px;  
 }
 
 
