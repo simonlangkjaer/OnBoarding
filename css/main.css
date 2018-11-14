@@ -419,6 +419,7 @@ a:link {
     margin: 10px 0px 0px 10px;
     font-weight: 100;
     color: white;
+    display: none;
 }
 
 .headlinetext {

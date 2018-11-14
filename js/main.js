@@ -51,9 +51,11 @@ function showSlides(n) {
 $(".headlinebox").click(function(e){
   e.preventDefault();
   $(".headlinetext").toggle();  
+  $(".headline").toggle();  
 });
 
 $(".icon1").click(function(e){
   e.preventDefault();
   $(".headlinetext").toggle();  
+  $(".headline").toggle();  
 });
