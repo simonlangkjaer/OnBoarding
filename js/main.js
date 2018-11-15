@@ -2,18 +2,24 @@
   window.onscroll = function() {scrollFunction()};
 
   function scrollFunction() {
+    console.log(document.documentElement.scrollTop);
+    
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
       // document.querySelector(".headershrink").style.height = "30px"; 
       // console.log(document.querySelectorAll(".headershrink")[0]);
+    
+    
       $('.headershrink').addClass('showheadershrink');
       $('.searchparent').addClass('searchhide');
-      $('.linknav').addClass('fontchange');
+      $('.dropbtn').addClass('fontchange');
 
     } else {
     //  document.getElementById("headershrink").style.height = "67px";
+    
+    
     $('.headershrink').removeClass('showheadershrink');  
     $('.searchparent').removeClass('searchhide');
-    $('.linknav').removeClass('fontchange');
+    $('.dropbtn').removeClass('fontchange');
     }
   } 
 
@@ -58,4 +64,28 @@ $(".icon1").click(function(e){
   e.preventDefault();
   $(".headlinetext").toggle();  
   $(".headline").toggle();  
+});
+
+
+// Here are some dropdowns for the navbar
+
+$("#mainNav").on('dropdownToogled', function(e){
+  e.preventDefault();
+  dropdown = e.target;
+  $(this).find('.dropdown-content').filter(function(idx, elm){
+    return elm !==  dropdown;
+  }).hide(); 
+});
+
+
+$("#mainNav button").click(function(e){
+ 
+  e.preventDefault();
+  $dropdown = $(this).next('.dropdown-content');
+  $dropdown.toggle(); 
+  $dropdown.trigger('dropdownToogled');
+});
+
+$(".slideshow-container").click(function(c){
+  $(".dropdown-content").hide(); 
 });
