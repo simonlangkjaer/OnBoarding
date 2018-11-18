@@ -89,3 +89,5 @@ $("#mainNav button").click(function(e){
 $(".slideshow-container").click(function(c){
   $(".dropdown-content").hide(); 
 });
+
+
